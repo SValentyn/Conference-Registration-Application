@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<AnchorPane styleClass="root" stylesheets="@../decor/styles.css" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClientController">
+    <children>
+        <BorderPane prefHeight="525.0" prefWidth="800.0" scaleShape="false" stylesheets="/decor/styles.css">
+            <top>
+                <Pane prefHeight="84.0" prefWidth="800.0">
+                    <children>
+                        <Label layoutX="54.0" layoutY="39.0" text="Host:"/>
+                        <TextField fx:id="hostField" layoutX="105.0" layoutY="33.0" prefHeight="37.0" prefWidth="248.0">
+                            <cursor>
+                                <Cursor fx:constant="TEXT"/>
+                            </cursor>
+                            <tooltip>
+                                <Tooltip text="IP-address"/>
+                            </tooltip>
+                        </TextField>
+                        <Label layoutX="388.0" layoutY="39.0" text="Port:"/>
+                        <TextField fx:id="portField" layoutX="434.0" layoutY="33.0" prefHeight="37.0" prefWidth="110.0">
+                            <cursor>
+                                <Cursor fx:constant="TEXT"/>
+                            </cursor>
+                            <tooltip>
+                                <Tooltip text="Port number"/>
+                            </tooltip>
+                        </TextField>
+                        <Label layoutX="572.0" layoutY="39.0" text="Participants:"/>
+                        <TextField fx:id="participantsField" editable="false" layoutX="676.0" layoutY="33.0"
+                                   prefHeight="37.0" prefWidth="110.0">
+                            <cursor>
+                                <Cursor fx:constant="TEXT"/>
+                            </cursor>
+                            <tooltip>
+                                <Tooltip text="Amount participants"/>
+                            </tooltip>
+                        </TextField>
+                    </children>
+                </Pane>
+            </top>
+            <center>
+                <Pane prefHeight="200.0" prefWidth="200.0" stylesheets="/decor/styles.css"
+                      BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="180.0" layoutY="46.0" prefHeight="25.0" prefWidth="51.0" text="Name:"/>
+                        <TextField fx:id="nameField" layoutX="247.0" layoutY="40.0" prefHeight="37.0"
+                                   prefWidth="400.0"/>
+                        <Label layoutX="158.0" layoutY="104.0" prefHeight="25.0" prefWidth="72.0" text="Surname:"/>
+                        <TextField fx:id="surnameField" layoutX="247.0" layoutY="98.0" prefHeight="37.0"
+                                   prefWidth="400.0"/>
+                        <Label layoutX="129.0" layoutY="167.0" text="Organization:"/>
+                        <TextField fx:id="orgField" layoutX="247.0" layoutY="161.0" prefHeight="37.0" prefWidth="400.0">
+                            <tooltip>
+                                <Tooltip text="School, university, other..."/>
+                            </tooltip>
+                        </TextField>
+                        <Label layoutX="172.0" layoutY="227.0" prefHeight="25.0" prefWidth="60.0" text="Report:"/>
+                        <TextField fx:id="reportField" layoutX="247.0" layoutY="221.0" prefHeight="37.0"
+                                   prefWidth="400.0">
+                            <tooltip>
+                                <Tooltip text="Subject of the report/lecture"/>
+                            </tooltip>
+                        </TextField>
+                        <Label layoutX="177.0" layoutY="283.0" prefHeight="25.0" prefWidth="57.0" text="E-mail:"/>
+                        <TextField fx:id="emailField" layoutX="247.0" layoutY="277.0" prefHeight="37.0"
+                                   prefWidth="400.0"/>
+                    </children>
+                </Pane>
+            </center>
+            <bottom>
+                <HBox prefHeight="83.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="regButton" maxWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#actionRegistration" prefHeight="40.0" prefWidth="170.0" text="Registration">
+                            <HBox.margin>
+                                <Insets left="18.0" top="15.0"/>
+                            </HBox.margin>
+                            <tooltip>
+                                <Tooltip text="Register in the conference"/>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="clearButton" maxWidth="-Infinity" mnemonicParsing="false" onAction="#actionClear"
+                                prefHeight="40.0" prefWidth="170.0" text="Clear">
+                            <HBox.margin>
+                                <Insets left="30.0" top="15.0"/>
+                            </HBox.margin>
+                            <tooltip>
+                                <Tooltip text="Clear all fields"/>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="infoButton" maxWidth="-Infinity" mnemonicParsing="false" onAction="#getInfo"
+                                prefHeight="40.0" prefWidth="170.0" text="Get info">
+                            <HBox.margin>
+                                <Insets left="30.0" top="15.0"/>
+                            </HBox.margin>
+                            <tooltip>
+                                <Tooltip text="Information about all conference participants"/>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="exitButton" cancelButton="true" maxWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#actionExit" prefHeight="40.0" prefWidth="170.0" text="Exit">
+                            <HBox.margin>
+                                <Insets left="30.0" top="15.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets/>
+                    </BorderPane.margin>
+                </HBox>
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>

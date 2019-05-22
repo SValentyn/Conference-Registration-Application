@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="360.0" prefWidth="610.0" styleClass="root" stylesheets="@../decor/styles.css"
+            xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.InfoController">
+    <children>
+        <Label graphicTextGap="6.0" layoutX="14.0" layoutY="21.0" prefHeight="45.0" prefWidth="510.0"
+               styleClass="bigLabel" text="All conference participants:" textAlignment="JUSTIFY"/>
+        <TextArea fx:id="textArea" accessibleRole="BUTTON" editable="false" layoutX="11.0" layoutY="80.0"
+                  prefHeight="259.0" prefWidth="587.0">
+            <font>
+                <Font size="14.0"/>
+            </font>
+            <cursor>
+                <Cursor fx:constant="NONE"/>
+            </cursor>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+        </TextArea>
+    </children>
+</AnchorPane>

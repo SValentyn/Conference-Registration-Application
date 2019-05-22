@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane styleClass="root" stylesheets="@../decor/styles.css" xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ServerController">
+    <children>
+        <BorderPane prefHeight="525.0" prefWidth="800.0" scaleShape="false" stylesheets="/decor/styles.css"
+                    AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="0.0">
+            <top>
+                <Pane prefHeight="84.0" prefWidth="800.0">
+                    <children>
+                        <Label layoutX="28.0" layoutY="30.0" text="Host:">
+                            <padding>
+                                <Insets left="30.0"/>
+                            </padding>
+                        </Label>
+                        <TextField fx:id="hostField" layoutX="105.0" layoutY="24.0" prefHeight="37.0" prefWidth="248.0">
+                            <cursor>
+                                <Cursor fx:constant="TEXT"/>
+                            </cursor>
+                            <tooltip>
+                                <Tooltip text="IP-address"/>
+                            </tooltip>
+                        </TextField>
+                        <Label layoutX="360.0" layoutY="30.0" text="Port:">
+                            <padding>
+                                <Insets left="30.0"/>
+                            </padding>
+                        </Label>
+                        <TextField fx:id="portField" layoutX="434.0" layoutY="24.0" prefHeight="37.0" prefWidth="110.0">
+                            <cursor>
+                                <Cursor fx:constant="TEXT"/>
+                            </cursor>
+                            <tooltip>
+                                <Tooltip text="Port number"/>
+                            </tooltip>
+                        </TextField>
+                        <Label layoutX="544.0" layoutY="30.0" text="Participants:">
+                            <padding>
+                                <Insets left="30.0"/>
+                            </padding>
+                        </Label>
+                        <TextField fx:id="participantsField" editable="false" layoutX="676.0" layoutY="24.0"
+                                   prefHeight="37.0" prefWidth="110.0">
+                            <cursor>
+                                <Cursor fx:constant="TEXT"/>
+                            </cursor>
+                            <tooltip>
+                                <Tooltip text="Amount participants"/>
+                            </tooltip>
+                        </TextField>
+                    </children>
+                </Pane>
+            </top>
+            <left>
+                <Pane maxHeight="-Infinity" prefHeight="338.0" prefWidth="0.0" BorderPane.alignment="TOP_LEFT">
+                    <BorderPane.margin>
+                        <Insets/>
+                    </BorderPane.margin>
+                </Pane>
+            </left>
+            <center>
+                <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="342.0" prefWidth="765.0"
+                            BorderPane.alignment="TOP_LEFT">
+                    <BorderPane.margin>
+                        <Insets left="20.0"/>
+                    </BorderPane.margin>
+                    <content>
+                        <TextArea fx:id="textArea" accessibleRole="BUTTON" editable="false" prefHeight="353.0"
+                                  prefWidth="763.0">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                            <cursor>
+                                <Cursor fx:constant="NONE"/>
+                            </cursor>
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                        </TextArea>
+                    </content>
+                </ScrollPane>
+            </center>
+            <bottom>
+                <HBox prefHeight="83.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="buttonStart" maxWidth="-Infinity" mnemonicParsing="false" onAction="#actionStart"
+                                prefHeight="37.0" prefWidth="125.0" text="Start">
+                            <HBox.margin>
+                                <Insets left="30.0" top="15.0"/>
+                            </HBox.margin>
+                            <tooltip>
+                                <Tooltip text="Start the registration process"/>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="buttonStop" maxWidth="-Infinity" mnemonicParsing="false" onAction="#actionStop"
+                                prefHeight="37.0" prefWidth="125.0" text="Stop">
+                            <HBox.margin>
+                                <Insets left="30.0" top="15.0"/>
+                            </HBox.margin>
+                            <tooltip>
+                                <Tooltip text="Stop the registration process"/>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="buttonSave" maxWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#saveDataToFile" prefHeight="37.0" prefWidth="125.0" text="Save">
+                            <HBox.margin>
+                                <Insets left="30.0" top="15.0"/>
+                            </HBox.margin>
+                            <tooltip>
+                                <Tooltip text="Save data to file"/>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="buttonLoad" cancelButton="true" maxWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#loadDataFromFile" prefHeight="37.0" prefWidth="125.0" text="Load">
+                            <HBox.margin>
+                                <Insets left="30.0" top="15.0"/>
+                            </HBox.margin>
+                            <tooltip>
+                                <Tooltip text="Load data from file"/>
+                            </tooltip>
+                        </Button>
+                        <Button fx:id="buttonExit" cancelButton="true" maxWidth="-Infinity" mnemonicParsing="false"
+                                onAction="#actionExit" prefHeight="37.0" prefWidth="125.0" text="Exit">
+                            <HBox.margin>
+                                <Insets left="30.0" top="15.0"/>
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets/>
+                    </BorderPane.margin>
+                </HBox>
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>
