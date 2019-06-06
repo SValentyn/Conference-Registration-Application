@@ -7,7 +7,7 @@ Description project: The resource folder contains: the server application (confe
 
 ![Image alt](https://github.com/SValentyn/Conference_JavaFX/blob/master/src/images/conference_and_registration_windows.png)
 <p align="center">
-  <img  width="450" height="350" src="https://github.com/SValentyn/Conference_JavaFX/blob/master/src/images/info_window.png">
+  <img  width="450" height="310" src="https://github.com/SValentyn/Conference_JavaFX/blob/master/src/images/info_window.png">
 </p>
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com)
