@@ -7,7 +7,8 @@
 
 ---
 
-Description project: The resource folder contains: the server application (conference window) and the client application (registration window). The basis is the use of [RMI technology](https://en.wikipedia.org/wiki/Java_remote_method_invocation) and the JavaFX library. Also work with [XML files](https://en.wikipedia.org/wiki/XML) (saving and reading) was implemented. A [Model-View-Controller](https://en.wikipedia.org/wiki/Model–view–controller) data sharing scheme was used. In addition, the repository contains a similar project, but written using Swing library.
+Description project: The resource folder contains: the server application (conference window) and the client application (registration window). The basis is the use of [RMI technology](https://en.wikipedia.org/wiki/Java_remote_method_invocation) and the JavaFX library. Also work with [XML files](https://en.wikipedia.org/wiki/XML) (saving and reading) was implemented. A [Model-View-Controller](https://en.wikipedia.org/wiki/Model–view–controller) data sharing scheme was used.   
+In addition, the repository contains a similar project, but written using Swing library.
 
 ![Image alt](https://github.com/SValentyn/Conference_JavaFX/blob/master/src/images/conference_and_registration_windows.png)
 <p align="center">
